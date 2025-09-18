@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generated Page</title>
+  <script src="./js/htmx.min.js" defer></script>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%; padding: 20px; border: 2px solid black; text-align:center;">
+    <h1>
+      🏠 Welcome to the Home Page!
+    </h1>
+    <p style="font-size: 16px; margin-top: 10px;">
+      This is some random content for the home page. Explore the navigation below to see other pages.
+    </p>
+    <a href="/about" style="margin-top: 20px; font-size: 14px; color: blue; text-decoration: underline;">
+      Go to About Page
+    </a>
+    <button hx-post="/htmx-log" hx-trigger="click" hx-swap="none">
+      console.log
+    </button>
+  </div>
+
+</body>
+</html>
